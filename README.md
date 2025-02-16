@@ -42,7 +42,7 @@ While the structure remains similar to the original Spotify, I'm adding my own c
 
 ## 📸 Preview  
 
-
+  To preview this website, [go to this link](https://rahul-suthar.github.io/Spotify-Clone/).
 
 
 ## 🛠️ Tech Stack  
