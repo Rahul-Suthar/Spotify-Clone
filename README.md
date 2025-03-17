@@ -10,13 +10,19 @@ While the structure remains similar to the original Spotify, I'm adding my own c
     |
     │── /img
     |
+    │── /css
+    |     │── style.css
+    |     │── utility.css
+    |     │── media.css
+    |
+    │── /songs
+    |     │── ncs
+    |     │── cs
+    |
     │── favicon.ico
     |
     │── index.html
     |
-    │── style.css
-    |
-    │── utility.css
 ```
 
 ## 🚀 Features  
