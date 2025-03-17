@@ -1,0 +1,97 @@
+#Splogo{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.border{
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.icons{
+    width: 30px;
+    filter: invert(1);
+    padding: 6px;
+}
+
+.s-icon{
+    width: 23px;
+    filter: invert(1);
+    padding: 12px;
+}
+
+.play-icon{
+    width: 17px;
+    padding: 12px;
+}
+
+.m-icon{
+    width: 32px;
+    padding-right: 12px;
+}
+
+.searchbar{
+    position: relative;
+}
+
+.searchbar>img{
+    position: absolute;
+}
+
+.padd{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;  /* Dark background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;  /* Dark gray thumb */
+    border-radius: 10px;
+    border: 2px solid #1a1a1a; /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Lighter on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
+}
+
+
+
+.songBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.songBtns>img{
+    width: 15px;
+    filter: invert(1);
+}

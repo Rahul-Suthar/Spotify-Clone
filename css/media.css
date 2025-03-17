@@ -1,0 +1,36 @@
+@media (width <= 1000px) {
+    .navhero ul:nth-child(1){
+        display: none;
+        position:absolute;
+        top: 60px;
+        right: 0;
+        z-index: 5;
+        width: 25%;
+        background-color: rgb(36, 36, 36);
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #left{
+        background-color: #25382e;
+        width: 260px;
+        position: absolute;
+        left: -260px;
+        z-index: 10;
+    }
+    
+    #left.showLeft{
+        left: 0;
+    }
+
+    #right{
+        margin-left: 0;
+        width: 100vw;
+    }
+}
+
+@media (width <= 500px) {
+    #left{
+        height: 140vw;
+    }
+}

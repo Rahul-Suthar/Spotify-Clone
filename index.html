@@ -2,64 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header>
-      <nav class="flex items-center justify-content">
-        <div class="flex">
-          <img class="icons" src="img/logo.svg" alt="logo" />
+      <nav>
+        <div id="Splogo">
+          <img src="img/logo.svg" alt="logo" />
         </div>
-        <ul class="flex">
-          <li class="h-icon">
-            <img src="./img/home.svg" alt="home" />
-          </li>
-          <li class="searchbar flex items-center">
-            <img class="s-icon" src="img/search.svg" alt="search" />
-            <input type="text" placeholder="search your songs" />
-          </li>
-        </ul>
-        <ul class="navhero1 flex justify-content">
-          <a>Premium</a>
-          <a>Support</a>
-          <a>Download</a>
-        </ul>
-        <ul class="navhero flex justify-content items-center">
-          <a>Install App</a>
-          <a>Sign up</a>
-          <button><a href="#">Log in</a></button>
-        </ul>
+        <div class="logo">
+          <img src="./img/home.svg" alt="home" />
+        </div>
+        <div class="searchbar">
+          <img class="s-icon" src="img/search.svg" alt="search" />
+          <input type="text" placeholder="search your songs" />
+        </div>
+        <div class="navhero">
+          <ul class="flex justify-content items-center">
+            <a>Premium</a>
+            <a>Support</a>
+            <a>Download</a>
+          </ul>
+          <ul class="flex justify-content items-center">
+            <a>Sign up</a>
+            <button id="loginBtn"><a href="#">Log in</a></button>
+          </ul>
+        </div>
       </nav>
     </header>
-    <div class="container flex">
-      <div class="left border">
-        <div class="library-icon flex items-center">
-          <img class="icons" src="img/libr.svg" alt="library-icon" />
-          <h4>Your Library</h4>
-          <img
-            style="width: 15px; filter: invert(1)"
-            src="img/plus.svg"
-            alt="plus-icon"
-          />
+    <div class="container">
+      <div id="left">
+        <div>
+          <div class="library-icon flex items-center">
+            <img class="icons" src="img/libr.svg" alt="library-icon" />
+            <h4>Your Library</h4>
+            <img
+              style="width: 15px; filter: invert(1)"
+              src="img/plus.svg"
+              alt="plus-icon"
+            />
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
         </div>
 
-        <div class="creP border">
-          <h4>Create Your first playlist</h4>
-          <p>It's easy, we will help you</p>
-          <button>Create playlist</button>
-        </div>
-
-        <div class="creP border">
-          <h4>Let's find some podcast to follow</h4>
-          <p>We'll keep you updated on new episodes</p>
-          <button>Browse podcasts</button>
-        </div>
-
-        <div class="footer padd">
+        <div class="footer">
           <div class="l-footer">
             <div>
               <a href="https://www.spotify.com/in-en/legal/">Legal</a>
@@ -100,161 +93,37 @@
           </div>
         </div>
       </div>
-      <div class="right border">
-        <div class="popArt border">
-          <h2>Popular artists</h2>
-          <div class="artlist flex">
-            <div class="card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
+      <div id="right">
+        <div class="hero">
+          <div id="album">
           </div>
         </div>
-        <div class="popArt border">
-          <h2>Popular albums and singles</h2>
-          <div class="artlist flex">
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
+        <div class="playbar">
+          <div class="songInfo"></div>
+          <div class="songBtns">
+            <img id="previous" src="img/backward.svg" alt="backward" />
+            <img id="play" src="img/play.svg" alt="play" />
+            <img id="next" src="img/forward.svg" alt="forward" />
           </div>
-        </div>
-        <div class="popArt border">
-          <h2>Popular radio</h2>
-          <div class="artlist flex">
-            <div class="card song-card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/pritam.jpeg" alt="pritam" />
-              <h4>Pritam</h4>
-              <p>Artist</p>
-            </div>
+          <div class="volume">
+            <img class="icons" src="img/volume.svg" alt="volume" />
+            <input
+              type="range"
+              name="volume"
+              id="volume"
+              min="0"
+              max="100"
+              value="100"
+            />
           </div>
-        </div>
-        <div class="popArt border">
-          <h2>Featured Charts</h2>
-          <div class="artlist flex">
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
+          <div class="songTime">--:--</div>
+          <div class="seekbar">
+            <div class="progressBar"></div>
+            <div class="circle"></div>
           </div>
-        </div>
-        <div class="popArt border">
-          <h2>India's Best</h2>
-          <div class="artlist flex">
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-            <div class="card song-card">
-              <img src="img/song.jpeg" alt="pritam" />
-              <h4>Sanam Teri Kasam</h4>
-              <p>Himesh Reshammiya</p>
-            </div>
-          </div>
-        </div>
-        <div class="popArt border">
-          <div class="card"></div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
